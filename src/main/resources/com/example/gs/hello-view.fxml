@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="ap_main" fx:controller="com.example.gs.HelloController"
+            prefHeight="96" prefWidth="478"
+            xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <ScrollPane fx:id="sp_main" layoutY="78" layoutX="30"
+                    prefHeight="256" prefWidth= "418" fitToWidth="true">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248"
+                      prefWidth="412"/>
+            </content>
+        </ScrollPane>
+        <Label layoutX="114" layoutY="26"
+               text="Messenger">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="23"></Font>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
